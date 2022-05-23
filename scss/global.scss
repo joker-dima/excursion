@@ -1,0 +1,48 @@
+// Global
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url("../fonts/PTSans-Bold.woff2"), url("../fonts/PTSans-Bold.woff");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url("../fonts/PTSans-Regular.woff2"), url("../fonts/PTSans-Regular.woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+.page-body {
+    background-color: #E7E5E5;
+}
+
+.page-container {
+    background-color: white;
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
