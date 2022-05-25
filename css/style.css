@@ -347,7 +347,7 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  margin-bottom: 33px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -517,13 +517,14 @@
   display: flex;
   justify-content: space-around;
   padding: 0 20px 0 20px;
-  gap: 20px;
+  gap: 30px;
 }
 
 @media (max-width: 767px) {
   .our-features--wrapper {
     flex-direction: column;
-    padding: 14px 31px 19px 19px;
+    padding: 0 20px 20px 20px;
+    gap: 10px;
   }
 }
 
@@ -554,18 +555,9 @@
   }
 }
 
-.our-features__item {
-  margin: 0 auto;
-}
-
-@media (max-width: 767px) {
-  .our-features__item img {
-    width: 90%;
-  }
-}
-
 .title__heading--position {
   margin: 0;
+  font-size: 16px;
 }
 
 @media (max-width: 767px) {
@@ -577,8 +569,8 @@
   }
 }
 
-.title__content--position {
-  padding: 15px 15px 0 15px;
+.title__heading--small {
+  font-size: 16px;
 }
 
 @media (max-width: 767px) {
@@ -588,5 +580,117 @@
     grid-column-end: 3;
     padding-top: 0;
   }
+}
+
+.form-wrapper {
+  text-align: center;
+}
+
+.input-field {
+  width: 40%;
+  border: 2px solid black;
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  .input-field {
+    width: 60%;
+  }
+}
+
+.input-field__email {
+  height: 3vh;
+  margin-top: 5px;
+}
+
+.button-submit {
+  line-height: 50px;
+  text-transform: uppercase;
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #74b4d7;
+  border: none;
+  letter-spacing: 2px;
+  border-radius: 3px;
+}
+
+.button-submit:hover {
+  cursor: pointer;
+  background-color: #4487b2;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 10px rgba(82, 168, 236, 0.6);
+}
+
+.button-submit:focus {
+  background-color: #186b9f;
+}
+
+.social-bar {
+  text-align: center;
+}
+
+.social-icon:hover .fil0 {
+  fill: #007235;
+}
+
+.social-icon:hover .telega-fill {
+  fill: #2783aa;
+}
+
+.social-icon:hover .cls-1 {
+  fill: #30608d;
+}
+
+.social-icon:hover .phone-st0 {
+  fill: #4487b2;
+}
+
+.social-icon:active .fil0 {
+  fill: #01582a;
+}
+
+.social-icon:active .telega-fill {
+  fill: #216886;
+}
+
+.social-icon:active .cls-1 {
+  fill: #254a6d;
+}
+
+.social-icon:active .phone-st0 {
+  fill: #186b9f;
+}
+
+.phone-st0 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #74B4D7;
+}
+
+.phone-st1 {
+  fill: #FFFFFF;
+}
+
+.fil0 {
+  fill: #009846;
+}
+
+.fil1 {
+  fill: white;
+}
+
+.cls-1 {
+  fill: #4489c8;
+}
+
+.cls-2 {
+  fill: #fff;
+}
+
+.title__content--social {
+  margin-top: 10px;
+  padding: 0 20px;
 }
 /*# sourceMappingURL=style.css.map */
