@@ -62,19 +62,11 @@
 
     &:hover {
 
-        .fil0 {
-            fill: #007235;
-        }
-
-        .telega-fill {
-            fill: #2783aa;
-        }
-
-        .cls-1 {
-            fill: #30608d;
-        }
-
-        .phone-st0 {
+        .fil0,
+        .telega-fill,
+        .cls-1,
+        .phone-st0,
+        .st0-up {
             fill: #4487b2;
         }
     }
@@ -84,18 +76,9 @@
 
     &:active {
 
-        .fil0 {
-            fill: #01582a;
-        }
-
-        .telega-fill {
-            fill: #216886;
-        }
-
-        .cls-1 {
-            fill: #254a6d;
-        }
-
+        .fil0,
+        .telega-fill,
+        .cls-1,
         .phone-st0 {
             fill: #186b9f;
         }
@@ -117,7 +100,7 @@
 // Whatsapp
 
 .fil0 {
-    fill: #009846;
+    fill: #74b4d7;
 }
 
 .fil1 {
@@ -127,7 +110,7 @@
 // VK
 
 .cls-1 {
-    fill: #4489c8;
+    fill: #74b4d7;
 }
 
 .cls-2 {
@@ -137,4 +120,23 @@
 .title__content--social {
     margin-top: 10px;
     padding: 0 20px;
+}
+
+.st0-up {
+    fill: #74b4d7;
+}
+
+.copyright {
+    padding: 0 10px;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.copyright--up {
+    margin: 0;
+}
+
+hr {
+    border-bottom: 1px solid black;
 }
