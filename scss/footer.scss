@@ -1,160 +1,128 @@
-// .form-wrapper {
-//     text-align: center;
-// }
+.form-wrapper {
+    text-align: center;
+}
 
-// .input-field {
-//     width: 40%;
-//     border: 2px solid black;
-//     outline: none;
+.input-field {
+    width: 40%;
+    border: 2px solid black;
+    outline: none;
 
-//     @media (max-width: 767px) {
-//         width: 60%;
-//     }
-// }
+    @media (max-width: 767px) {
+        width: 60%;
+    }
+}
 
-// .input-field__email {
-//     height: 3vh;
-//     margin-top: 5px;
-// }
+.input-field__email {
+    height: 3vh;
+    margin-top: 5px;
+}
 
-// .button-submit {
-//     font-family: 'PT Sans';
-//     line-height: 50px;
-//     text-transform: uppercase;
-//     width: 200px;
-//     height: 50px;
-//     color: white;
-//     font-weight: 700;
-//     font-size: 18px;
-//     background-color: #74b4d7;
-//     border: none;
-//     letter-spacing: 2px;
-//     border-radius: 3px;
+.button-submit {
+    font-family: 'PT Sans';
+    line-height: 50px;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: #74b4d7;
+    border: none;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    transition: .4s;
 
-//     &:hover {
-//         cursor: pointer;
-//         background-color: #4487b2;
-//         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 10px rgba(82, 168, 236, 0.6);
-//     }
+    &:hover {
+        cursor: pointer;
+        background-color: #4487b2;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 10px rgba(82, 168, 236, 0.6);
+    }
 
-//     &:focus {
-//         background-color: #186b9f;
-//     }
-// }
+    &:focus {
+        background-color: #186b9f;
+    }
+}
 
-// // Social icons
+.social-bar {
+    text-align: center;
+}
 
-// .social-bar {
-//     text-align: center;
+.social-bar__icons {
+    margin: 0 auto;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
 
-//     @media (max-width:500px) {
-//         grid-column-start: 1;
-//         grid-column-end: 3;
-//     }
-// }
+.title__content--social {
+    margin-top: 10px;
+    padding: 0 20px;
+}
 
-// .social-bar__icons {
-//     margin: 0 auto;
-//     width: 180px;
-//     display: flex;
-//     justify-content: space-between;
-// }
+.copyright {
+    padding: 0 10px 0px 10px;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    text-align: center;
 
-// .social-icon {
+    @media (max-width:500px) {
+        grid-template: 1fr 1fr 0.7fr / 1fr;
+        gap: 10px;
+    }
+}
 
-//     &:hover {
+.copyright__logo {
+    @media (max-width:500px) {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
 
-//         .fil0,
-//         .telega-fill,
-//         .cls-1,
-//         .phone-st0,
-//         .st0-up {
-//             fill: #4487b2;
-//         }
-//     }
-// }
+.copyright__title {
+    margin: 0;
+}
 
-// .social-icon {
+hr {
+    border-bottom: 1px solid black;
+}
 
-//     &:active {
+.social {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    list-style-type: none;
+    width: 300px;
+    padding: 10px 20px 10px 20px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
 
-//         .fil0,
-//         .telega-fill,
-//         .cls-1,
-//         .phone-st0 {
-//             fill: #186b9f;
-//         }
-//     }
-// }
+// Icons 
 
-// // Phone
+.social__icon {
+    height: 50px;
+    width: 50px;
+    transition: .4s;
 
-// .phone-st0 {
-//     fill-rule: evenodd;
-//     clip-rule: evenodd;
-//     fill: #74B4D7;
-// }
+    fill: #74b4d7;
 
-// .phone-st1 {
-//     fill: #FFFFFF;
-// }
+    &:hover {
+        fill: #4487b2;
+    }
 
-// // Whatsapp
+    &:active {
+        fill: #186b9f;
+    }
+}
 
-// .fil0 {
-//     fill: #74b4d7;
-// }
+.fil-white {
+    fill: white;
+}
 
-// .fil1 {
-//     fill: white;
-// }
+.fil-gray {
+    fill: #bababa;
+}
 
-// // VK
-
-// .cls-1 {
-//     fill: #74b4d7;
-// }
-
-// .cls-2 {
-//     fill: #fff;
-// }
-
-// .title__content--social {
-//     margin-top: 10px;
-//     padding: 0 20px;
-// }
-
-// .st0-up {
-//     fill: #74b4d7;
-// }
-
-// .copyright {
-//     padding: 0 10px 10px 10px;
-//     display: grid;
-//     grid-template: 1fr / 1fr 1fr 1fr;
-//     text-align: center;
-
-//     @media (max-width:500px) {
-//         grid-template: 1fr 1fr / 1fr 1fr;
-//         gap: 10px;
-//     }
-// }
-
-// .copyright--up {
-//     margin: 0;
-// }
-
-// hr {
-//     border-bottom: 1px solid black;
-// }
-
-// .copyright--text {
-//     margin: auto 0 0 0;
-// }
-
-// .social-icon--position {
-//     @media (max-width:500px) {
-//         grid-row-start: 2;
-//         grid-row-end: 3;
-//     }
-// }
+.fil-gray-light {
+    fill: #e2e2e2;
+}
