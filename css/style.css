@@ -323,153 +323,6 @@
   padding-top: 80px;
 }
 
-.form-wrapper {
-  text-align: center;
-}
-
-.input-field {
-  width: 40%;
-  border: 2px solid black;
-  outline: none;
-}
-
-@media (max-width: 767px) {
-  .input-field {
-    width: 60%;
-  }
-}
-
-.input-field__email {
-  height: 3vh;
-  margin-top: 5px;
-}
-
-.button-submit {
-  font-family: 'PT Sans';
-  line-height: 50px;
-  text-transform: uppercase;
-  width: 200px;
-  height: 50px;
-  color: white;
-  font-weight: 700;
-  font-size: 18px;
-  background-color: #74b4d7;
-  border: none;
-  letter-spacing: 2px;
-  border-radius: 3px;
-}
-
-.button-submit:hover {
-  cursor: pointer;
-  background-color: #4487b2;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 10px rgba(82, 168, 236, 0.6);
-}
-
-.button-submit:focus {
-  background-color: #186b9f;
-}
-
-.social-bar {
-  text-align: center;
-}
-
-@media (max-width: 500px) {
-  .social-bar {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-}
-
-.social-bar__icons {
-  margin: 0 auto;
-  width: 180px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.social-icon:hover .fil0,
-.social-icon:hover .telega-fill,
-.social-icon:hover .cls-1,
-.social-icon:hover .phone-st0,
-.social-icon:hover .st0-up {
-  fill: #4487b2;
-}
-
-.social-icon:active .fil0,
-.social-icon:active .telega-fill,
-.social-icon:active .cls-1,
-.social-icon:active .phone-st0 {
-  fill: #186b9f;
-}
-
-.phone-st0 {
-  fill-rule: evenodd;
-  clip-rule: evenodd;
-  fill: #74B4D7;
-}
-
-.phone-st1 {
-  fill: #FFFFFF;
-}
-
-.fil0 {
-  fill: #74b4d7;
-}
-
-.fil1 {
-  fill: white;
-}
-
-.cls-1 {
-  fill: #74b4d7;
-}
-
-.cls-2 {
-  fill: #fff;
-}
-
-.title__content--social {
-  margin-top: 10px;
-  padding: 0 20px;
-}
-
-.st0-up {
-  fill: #74b4d7;
-}
-
-.copyright {
-  padding: 0 10px 10px 10px;
-  display: grid;
-  grid-template: 1fr / 1fr 1fr 1fr;
-  text-align: center;
-}
-
-@media (max-width: 500px) {
-  .copyright {
-    grid-template: 1fr 1fr / 1fr 1fr;
-    gap: 10px;
-  }
-}
-
-.copyright--up {
-  margin: 0;
-}
-
-hr {
-  border-bottom: 1px solid black;
-}
-
-.copyright--text {
-  margin: auto 0 0 0;
-}
-
-@media (max-width: 500px) {
-  .social-icon--position {
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-}
-
 .title {
   margin: 0 auto;
   max-width: 490px;
@@ -724,5 +577,137 @@ hr {
     grid-column-end: 3;
     padding-top: 0;
   }
+}
+
+.form-wrapper {
+  text-align: center;
+}
+
+.input-field {
+  width: 40%;
+  border: 2px solid black;
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  .input-field {
+    width: 60%;
+  }
+}
+
+.input-field__email {
+  height: 3vh;
+  margin-top: 5px;
+}
+
+.button-submit {
+  font-family: 'PT Sans';
+  line-height: 50px;
+  text-transform: uppercase;
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #74b4d7;
+  border: none;
+  letter-spacing: 2px;
+  border-radius: 3px;
+}
+
+.button-submit:hover {
+  cursor: pointer;
+  background-color: #4487b2;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 10px rgba(82, 168, 236, 0.6);
+}
+
+.button-submit:focus {
+  background-color: #186b9f;
+}
+
+.social-bar {
+  text-align: center;
+}
+
+.social-bar__icons {
+  margin: 0 auto;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title__content--social {
+  margin-top: 10px;
+  padding: 0 20px;
+}
+
+.st0-up {
+  fill: #74b4d7;
+}
+
+.copyright {
+  padding: 0 10px 10px 10px;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .copyright {
+    grid-template: 1fr 1fr 1fr / 1fr;
+    gap: 10px;
+  }
+}
+
+hr {
+  border-bottom: 1px solid black;
+}
+
+.copyright--text {
+  margin: auto 0 0 0;
+}
+
+@media (max-width: 500px) {
+  .social-icon--position {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  list-style-type: none;
+  width: 300px;
+  padding: 10px 20px 10px 20px;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+.social__icon {
+  height: 50px;
+  width: 50px;
+  transition: .2s;
+}
+
+.social__link {
+  fill: #74b4d7;
+}
+
+.social__link:hover {
+  fill: #4487b2;
+}
+
+.fil-white {
+  fill: white;
+}
+
+.fil-gray {
+  fill: #bababa;
+}
+
+.fil-gray-light {
+  fill: #e2e2e2;
 }
 /*# sourceMappingURL=style.css.map */
