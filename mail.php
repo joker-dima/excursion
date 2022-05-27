@@ -1,52 +1,29 @@
 <?php
-
-$method = $_SERVER['REQUEST_METHOD'];
-
-//Script Foreach
-$c = true;
-if ( $method === 'POST' ) {
-
-	$project_name = trim($_POST["project_name"]);
-	$admin_email  = trim($_POST["admin_email"]);
-	$form_subject = trim($_POST["form_subject"]);
-
-	foreach ( $_POST as $key => $value ) {
-		if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
-			$message .= "
-			" . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
-				<td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
-				<td style='padding: 10px; border: #e9e9e9 1px solid;'>$value</td>
-			</tr>
-			";
-		}
-	}
-} else if ( $method === 'GET' ) {
-
-	$project_name = trim($_GET["project_name"]);
-	$admin_email  = trim($_GET["admin_email"]);
-	$form_subject = trim($_GET["form_subject"]);
-
-	foreach ( $_GET as $key => $value ) {
-		if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
-			$message .= "
-			" . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
-				<td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
-				<td style='padding: 10px; border: #e9e9e9 1px solid;'>$value</td>
-			</tr>
-			";
-		}
-	}
+require_once __DIR__ . '/recaptcha.php';
+$secret = "6LeFAB4gAAAAAGLVghfL5Z0jvSC0MLCBu09lnB9s";
+$response = null;
+ 
+$reCaptcha = new ReCaptcha($secret);
+	if ($_POST["g-recaptcha-response"]) {
+		$response = $reCaptcha->verifyResponse(
+		$_SERVER["REMOTE_ADDR"],
+		$_POST["g-recaptcha-response"]
+	);
 }
-
-$message = "<table style='width: 100%;'>$message</table>";
-
-function adopt($text) {
-	return '=?UTF-8?B?'.Base64_encode($text).'?=';
+$post = (!empty($_POST)) ? true : false;
+if($post) {
+	$email = htmlspecialchars(trim($_POST['email']));
+			$message = htmlspecialchars(trim($_POST['message']));
+	$error = '';
+	if(!$response) {$error .= 'ПОСТАВЬТЕ ГАЛОЧКУ, ПОДВЕРДИТЕ ЧТО ВЫ НЕ РОБОТ';}
+	if(!$email) {$error .= 'Укажите электронную почту. ';}
+		if(!$message || strlen($message) < 1) {$error .= 'Введите сообщение. ';}
+	if(!$error) {
+		$address = "joker-dima@yandex.ru";
+		$mes = "Почта: ".$email."\n\n Сообщение: ".$message."\n\n Сообщение с volgograd-tour.ru";
+		$send = mail ($address,$sub,$mes,"Content-type:text/plain; charset = UTF-8\r\nReply-To:$email\r\nFrom:$name <contact>");
+		if($send) {echo 'OK';}
+	}
+	else {echo '<div class="err">'.$error.'</div>';}
 }
-
-$headers = "MIME-Version: 1.0" . PHP_EOL .
-"Content-Type: text/html; charset=utf-8" . PHP_EOL .
-'From: '.adopt($project_name).' <'.$admin_email.'>' . PHP_EOL .
-'Reply-To: '.$admin_email.'' . PHP_EOL;
-
-mail($admin_email, adopt($form_subject), $message, $headers );
+?>

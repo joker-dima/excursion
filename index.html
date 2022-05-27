@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Экскурсии по городу Волгограду</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -30,7 +31,7 @@
                         <a href="index.html">Главная</a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="#">Экскурсии</a>
+                        <a href="excursions.html">Экскурсии</a>
                     </li>
                     <li class="main-navigation__item--logo main-navigation__item">
                         <a href="index.html">
@@ -42,7 +43,7 @@
                         </a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="#">Контакты</a>
+                        <a href="contacts.html">Контакты</a>
                     </li>
                     <li class="main-navigation__item">
                         <a href="articles.html">Статьи</a>
@@ -210,19 +211,23 @@
                 <h3 class="title__heading">Заинтересовались? Закажите экскурсию!</h3>
             </div>
             <div class="social-bar">
-                <p class="title__content">Позвоните нам -</p>
+                <p class="title__content--social">Позвоните нам -</p>
                 <a href="tel:+79177215258" id="phone">
                     <svg class="social__icon">
                         <use xlink:href="#call"></use>
                     </svg>
+                    <br>
+                    <a href="tel:+79177215258" class="title__content">+7-917-721-52-58</a>
+
                 </a>
-                <p class="title__content title__content--social">Напишите в соц. сетях -</p>
+                <p class="title__content--social">Напишите в соц. сетях -</p>
                 <div class="social-bar__icons">
                     <a title="Whatsapp" href="whatsapp://send?phone=79177215258" target="_blank">
                         <svg class="social__icon">
                             <use xlink:href="#whatsapp"></use>
                         </svg>
                     </a>
+
 
                     <a title="Telegram" href="https://telegram.me/volgograd_tour" target="_blank">
                         <svg class="social__icon">
@@ -237,21 +242,24 @@
                         </svg>
                     </a>
                 </div>
-                <form class="form-wrapper">
-                    <div class="title">
-                        <p class="title__content title__content--social">Или воспользуйтесь формой обратной связи и
-                            мы
-                            ответим Вам на электронную почту -</p>
-                    </div>
-                    <input type="hidden" name="project_name" value="volgograd-tour.ru">
-                    <input type="hidden" name="admin_email" value="joker-dima@yandex.ru">
-                    <input type="hidden" name="form_subject" value="index-page">
 
-                    <input class="input-field input-field__email" maxlength="30" type="email" name="E-mail"
-                        placeholder="Введите Ваш e-mail" required><br>
-                    <p><textarea class="input-field input-field__text" rows="5" maxlength="300" name="message"
-                            placeholder="Что Вас интересует?" required></textarea></p>
-                    <button class="button-submit">отправить</button>
+                <div class="title">
+                    <p class="title__content--social">Или воспользуйтесь формой обратной связи и
+                        мы
+                        ответим Вам на электронную почту -</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contact" action="mail.php" method="post">
+                    <div id="note"></div>
+                    <div id="fields">
+                        <p><input maxlength="30" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+                        <p><textarea maxlength="300" name="message" cols="1" rows="5" id="comment"
+                                placeholder="Ваш вопрос" required></textarea></p>
+                        <div data-size="compact" class="g-recaptcha"
+                            data-sitekey="6LeFAB4gAAAAAMxoydugqHVFWVI1kO6IyPUqfGpL"></div>
+                        <p><button type="submit" id="submit" class="go">Отправить сообщение</button></p>
+                    </div>
                 </form>
             </div>
 
@@ -285,8 +293,9 @@
 
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="form.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="contact.js"></script>
     <script src="script.js"></script>
 
 </body>
