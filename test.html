@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Экскурсии по городу Волгограду</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/font-style.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet" />
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -76,62 +76,79 @@
         </header>
 
         <!-- MAIN-CONTENT -->
-
         <div class="title title__position">
-            <h3 class="title__heading">Контакты</h3>
+            <h3 class="title__heading">Экскурсии по Волгограду</h3>
+            <p class="title__content">Конечная стоимость экскурсий зависит от места Вашего проживания, количества людей
+                в экскурсионной группе и от Ваших пожеланий</p>
         </div>
-
-        <div class="social-bar">
-            <p class="title__content--social">Позвоните нам -</p>
-            <a href="tel:+79177215258" id="phone">
-                <svg class="social__icon">
-                    <use xlink:href="#call"></use>
-                </svg>
-            </a>
-            <br>
-            <a href="tel:+79177215258" class="title__content">+7-917-721-52-58</a>
-
-
-            <p class="title__content--social">Напишите в соц. сетях -</p>
-            <div class="social-bar__icons">
-                <a title="Whatsapp" href="whatsapp://send?phone=79177215258" target="_blank">
-                    <svg class="social__icon">
-                        <use xlink:href="#whatsapp"></use>
-                    </svg>
-                </a>
-
-                <a title="Telegram" href="https://telegram.me/volgograd_tour" target="_blank">
-                    <svg class="social__icon">
-                        <use xlink:href="#telegram"></use>
-                    </svg>
-
-                </a>
-
-                <a title="VK" href="https://vk.com/volgograd_tour34" target="_blank">
-                    <svg class="social__icon">
-                        <use xlink:href="#vk"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <div class="title">
-                <p class="title__content--social">Или воспользуйтесь формой обратной связи и
-                    мы
-                    ответим Вам на электронную почту -</p>
-            </div>
-        </div>
-        <div class="contact-form">
-            <form id="contact" action="mail.php" method="post">
-                <div id="note"></div>
-                <div id="fields">
-                    <p><input maxlength="30" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
-                    <p><textarea maxlength="300" name="message" cols="1" rows="5" id="comment" placeholder="Ваш вопрос"
-                            required></textarea></p>
-                    <div data-size="compact" class="g-recaptcha"
-                        data-sitekey="6LeFAB4gAAAAAMxoydugqHVFWVI1kO6IyPUqfGpL"></div>
-                    <p><button type="submit" id="submit" class="go">Отправить сообщение</button></p>
+        <div class="articles-wrapper">
+            <div class="article excursion">
+                <h4>Обзорная экскурсия по Волгограду</h4>
+                <div class="excursion__gallery">
+                    <a href="img/sobor.jpg" data-lightbox="sobor" data-title="Собор Александра Невского">
+                        <img class="article__img" src="img/sobor-smal.jpg" alt="Собор Александра Невского">
+                    </a>
+                    <a href="img/hall-of-fame.jpg" data-lightbox="sobor" data-title="Зал Славы, Мамаев Курган">
+                        <img class="article__img" src="img/hall-of-fame-smal.jpg" alt="Зал Славы, Мамаев Курган">
+                    </a>
+                    <a href="img/gerg-mill.jpg" data-lightbox="sobor" data-title="Мельница Гергарда">
+                        <img class="article__img" src="img/gerg-mill-smal.jpg" alt="Мельница Гергарда">
+                    </a>
                 </div>
-            </form>
+                <p class="excursion__info">
+                    - Продолжительность: 3-4 часа
+                    <br>
+                    - Стоимость: от 3000 руб. за группу
+                </p>
+                <hr class="excursion__line">
+                <p class="excursion__title">Вы посетите 3 самые узнаваемые достопримечательности Волгограда - </p>
+
+                <p class="excursion__info">- Площадь Павших Борцов:
+                </p>
+
+                <ul class="excursion__list">
+                    <li>Александро-Невский собор и Александровский сад</li>
+                    <li>Универмаг где 31.1.1942 был пленен Ф.Паулюс</li>
+                    <li>Обелиск и Вечный огонь</li>
+                    <li>Тополь, переживший Сталинградскую битву</li>
+                    <li>Новый экспериментальный театр</li>
+                </ul>
+                <p class="excursion__info">- Мамаев Курган
+                </p>
+                <p class="excursion__info">- Музей-панорама «Сталинградская битва»:
+                </p>
+                <ul class="excursion__list">
+                    <li>Дом Павлова</li>
+                    <li>Мельница Гергардта</li>
+                    <li>Музей-панорама (посещение самостоятельное, билеты в музей оплчиваются отдельно)</li>
+                </ul>
+                <br>
+                <a class="article__link" href="#">Читать полностью</a>
+            </div>
+
+            <div class="article">
+                <h4>Что посетить в Волгограде?</h4>
+                <img class="article__img" src="img/visit-vlg.jpg" alt="иконка новости">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga placeat vel. Minima
+                    repellendus quisquam, vitae illo dolor commodi doloremque accusantium, assumenda quam aliquam
+                    reprehenderit molestias. Ratione reiciendis iusto delectus cumque omnis dolore blanditiis vitae.
+                    Temporibus cumque ab et tempora.</p>
+                <a class="article__link" href="#">Читать полностью</a>
+            </div>
+            <div class="article">
+                <h4>Что посетить в Волгограде?</h4>
+                <img class="article__img" src="img/visit-vlg.jpg" alt="иконка новости">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iusto distinctio, accusantium
+                    voluptatum neque culpa aspernatur autem minus? Voluptas distinctio earum, corporis voluptates velit
+                    ullam quia quaerat consequuntur quibusdam porro magni eum excepturi quasi maiores repellat expedita,
+                    amet, provident dignissimos exercitationem sed qui. Dolore nulla ex aliquam aspernatur. Excepturi
+                    vel expedita asperiores exercitationem quia maiores ut eos! Ipsum culpa voluptatum et quis quasi,
+                    pariatur repudiandae dolores cum quidem quisquam asperiores magni sit, velit excepturi, sequi fuga
+                    est molestiae consectetur. Iusto!</p>
+                <a class="article__link" href="#">Читать полностью</a>
+            </div>
+
+
         </div>
 
 
@@ -217,9 +234,9 @@
 
         </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script src="js/contact.js"></script>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>
