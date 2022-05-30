@@ -278,10 +278,16 @@
   font-weight: 700;
   text-decoration: underline !important;
   color: #4487b2 !important;
+  margin-top: auto;
 }
 
 .article__link:hover {
   color: #155780 !important;
+  text-decoration: none !important;
+}
+
+.article__link:active {
+  color: #124464 !important;
 }
 
 .article__img {

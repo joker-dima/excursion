@@ -254,9 +254,15 @@
     font-weight: 700;
     text-decoration: underline !important;
     color: #4487b2 !important;
+    margin-top: auto;
 
     &:hover {
         color: #155780 !important;
+        text-decoration: none !important;
+    }
+
+    &:active {
+        color: #124464 !important;
     }
 }
 

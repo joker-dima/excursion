@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Экскурсии по городу Волгограду</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/font-style.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet" />
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -85,9 +85,16 @@
             <div class="article excursion">
                 <h4>Обзорная экскурсия по Волгограду</h4>
                 <div class="excursion__gallery">
-                    <img class="article__img" src="img/sobor.jpg" alt="иконка новости">
-                    <img class="article__img" src="img/mam-kurg.jpg" alt="иконка новости">
-                    <img class="article__img" src="img/gergard-mill.jpg" alt="иконка новости">
+                    <a href="img/sobor.jpg" data-lightbox="overview-excursion" data-title="Собор Александра Невского">
+                        <img class="article__img" src="img/sobor-smal.jpg" alt="Собор Александра Невского">
+                    </a>
+                    <a href="img/hall-of-fame.jpg" data-lightbox="overview-excursion"
+                        data-title="Зал Славы, Мамаев Курган">
+                        <img class="article__img" src="img/hall-of-fame-smal.jpg" alt="Зал Славы, Мамаев Курган">
+                    </a>
+                    <a href="img/gerg-mill.jpg" data-lightbox="overview-excursion" data-title="Мельница Гергарда">
+                        <img class="article__img" src="img/gerg-mill-smal.jpg" alt="Мельница Гергарда">
+                    </a>
                 </div>
                 <p class="excursion__info">
                     - Продолжительность: 3-4 часа
@@ -116,32 +123,188 @@
                     <li>Мельница Гергардта</li>
                     <li>Музей-панорама (посещение самостоятельное, билеты в музей оплчиваются отдельно)</li>
                 </ul>
+                <p></p>
+                <a class="article__link" href="contacts.html">Заказать экскурсию</a>
+            </div>
+
+
+            <div class="article excursion">
+                <h4>Расширенная обзорная экскурсия по Волгограду</h4>
+                <div class="excursion__gallery">
+                    <a href="img/ludnikov.jpg" data-lightbox="overview-excursion-large" data-title="Остров Людникова">
+                        <img class="article__img" src="img/ludnikov-smal.jpg" alt="Остров Людникова">
+                    </a>
+                    <a href="img/sold-field.jpg" data-lightbox="overview-excursion-large" data-title="Солдатское поле">
+                        <img class="article__img" src="img/sold-field-smal.jpg" alt="Солдатское поле">
+                    </a>
+                    <a href="img/rossoshka-field.jpg" data-lightbox="overview-excursion-large"
+                        data-title="Россошинский мемориал">
+                        <img class="article__img" src="img/rossoshka-field-smal.jpg" alt="Россошинский мемориал">
+                    </a>
+                </div>
+                <p class="excursion__info">
+                    - Продолжительность: 4-5 часа
+                    <br>
+                    - Стоимость: от 5000 руб. за группу
+                </p>
+                <hr class="excursion__line">
+                <p class="excursion__title">В тур включена такая же программа как в стандартной обзорной экскурсии, плюс
+                    дополительно Вы посетите: </p>
+
+                <p class="excursion__info">- Остров Людникова
+                </p>
+                <p class="excursion__info">- Солдатское поле
+                </p>
+                <p class="excursion__info">- РОССОШИНСКИЙ ВОЕННО-МЕМОРИАЛЬНЫЙ КОМПЛЕКС
+                </p>
                 <br>
-                <a class="article__link" href="#">Читать полностью</a>
+                <a class="article__link" href="contacts.html">Заказать экскурсию</a>
             </div>
 
-            <div class="article">
-                <h4>Что посетить в Волгограде?</h4>
-                <img class="article__img" src="img/visit-vlg.jpg" alt="иконка новости">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga placeat vel. Minima
-                    repellendus quisquam, vitae illo dolor commodi doloremque accusantium, assumenda quam aliquam
-                    reprehenderit molestias. Ratione reiciendis iusto delectus cumque omnis dolore blanditiis vitae.
-                    Temporibus cumque ab et tempora.</p>
-                <a class="article__link" href="#">Читать полностью</a>
-            </div>
-            <div class="article">
-                <h4>Что посетить в Волгограде?</h4>
-                <img class="article__img" src="img/visit-vlg.jpg" alt="иконка новости">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iusto distinctio, accusantium
-                    voluptatum neque culpa aspernatur autem minus? Voluptas distinctio earum, corporis voluptates velit
-                    ullam quia quaerat consequuntur quibusdam porro magni eum excepturi quasi maiores repellat expedita,
-                    amet, provident dignissimos exercitationem sed qui. Dolore nulla ex aliquam aspernatur. Excepturi
-                    vel expedita asperiores exercitationem quia maiores ut eos! Ipsum culpa voluptatum et quis quasi,
-                    pariatur repudiandae dolores cum quidem quisquam asperiores magni sit, velit excepturi, sequi fuga
-                    est molestiae consectetur. Iusto!</p>
-                <a class="article__link" href="#">Читать полностью</a>
+            <div class="article excursion">
+                <h4>Пешая экскурсия по Мамаеву Кургану</h4>
+                <div class="excursion__gallery">
+                    <a href="img/stand-death.jpg" data-lightbox="Mamaev" data-title="Площадь Стоявших насмерть">
+                        <img class="article__img" src="img/stand-death-smal.jpg" alt="Площадь Стоявших насмерть">
+                    </a>
+                    <a href="img/heroes.jpg" data-lightbox="Mamaev"
+                        data-title="Площадь Героев и шесть скульптурных композиций">
+                        <img class="article__img" src="img/heroes-smal.jpg"
+                            alt="Площадь Героев и шесть скульптурных композиций">
+                    </a>
+                    <a href="img/fire.jpg" data-lightbox="Mamaev" data-title="Вечный огонь">
+                        <img class="article__img" src="img/fire-smal.jpg" alt="Вечный огонь">
+                    </a>
+                    <a href="img/homeland-mother.jpg" data-lightbox="Mamaev" data-title="Родина-мать зовет!">
+                        <img class="article__img" src="img/homeland-mother-smal.jpg" alt="Родина-мать зовет!">
+                    </a>
+                </div>
+                <p class="excursion__info">
+                    - Продолжительность: 1-1.5 часа
+                    <br>
+                    - Стоимость: от 2000 руб. за группу
+                </p>
+                <hr class="excursion__line">
+                <p class="excursion__title">Вы поднимитесь на главную высоту России, ознакомитесь с подробностями боев
+                    за эту высоту, услышите неверотяные военные истории, а также интересные факты об основных
+                    композициях Историко-мемориального комплекса:</p>
+
+                <p class="excursion__info">- горельеф «Память поколений»
+                </p>
+                <p class="excursion__info">- Площадь Стоявших насмерть
+                </p>
+                <p class="excursion__info">- Стены-руины
+                </p>
+                <p class="excursion__info">- Площадь Героев и Подпорная стена
+                </p>
+                <p class="excursion__info">- Зал Воинской Славы и Вечный огонь
+                </p>
+                <p class="excursion__info">- Площадь Скорби
+                </p>
+                <p class="excursion__info">- Монумент «Родина-мать зовет!»
+                </p>
+                <br>
+                <a class="article__link" href="contacts.html">Заказать экскурсию</a>
             </div>
 
+            <div class="article excursion">
+                <h4>Экскурсия "Тогда / Сейчас"</h4>
+                <div class="excursion__gallery">
+                    <a href="img/univermag.jpg" data-lightbox="then-now" data-title="Сталинградский ЦУМ">
+                        <img class="article__img" src="img/univermag-smal.jpg" alt="Сталинградский ЦУМ">
+                    </a>
+                    <a href="img/Univermag-flag.jpg" data-lightbox="then-now"
+                        data-title="Сталинградский ЦУМ до и после боев">
+                        <img class="article__img" src="img/Univermag-flag-smal.jpg"
+                            alt="Сталинградский ЦУМ до и после боев">
+                    </a>
+                    <a href="img/fallen-figters-sq.jpg" data-lightbox="then-now"
+                        data-title="Площадь Павших Борцов до и после">
+                        <img class="article__img" src="img/fallen-figters-sq-smal.jpg"
+                            alt="Площадь Павших Борцов до и после">
+                    </a>
+                    <a href="img/elevator.jpg" data-lightbox="then-now"
+                        data-title="Сталинградский элеватор тогда сейчас">
+                        <img class="article__img" src="img/elevator-smal.jpg"
+                            alt="Сталинградский элеватор тогда сейчас">
+                    </a>
+                    <a href="img/grain-elevator.jpg" data-lightbox="then-now"
+                        data-title="Волгоград элеватор тогда сейчас">
+                        <img class="article__img" src="img/grain-elevator-smal.jpg"
+                            alt="Волгоград элеватор тогда сейчас">
+                    </a>
+                    <a href="img/beketovka.jpg" data-lightbox="then-now"
+                        data-title="Место первого допроса Паулюса тогда исейчас">
+                        <img class="article__img" src="img/beketovka-smal.jpg"
+                            alt="Место первого допроса Паулюса тогда исейчас">
+                    </a>
+                    <a href="img/barricadnaya-srt.jpg" data-lightbox="then-now"
+                        data-title="Немецкие солдаты на улице Баррикадная">
+                        <img class="article__img" src="img/barricadnaya-srt-smal.jpg"
+                            alt="Немецкие солдаты на улице Баррикадная">
+                    </a>
+                    <a href="img/germans-hole.jpg" data-lightbox="then-now"
+                        data-title="Немецкие солдаты в окопе Сталинград">
+                        <img class="article__img" src="img/germans-hole-smal.jpg"
+                            alt="Немецкие солдаты в окопе Сталинград">
+                    </a>
+                </div>
+                <p class="excursion__info">
+                    - Продолжительность: 3-5 часов
+                    <br>
+                    - Стоимость: от 4000 руб. за группу
+                </p>
+                <hr class="excursion__line">
+                <p class="excursion__title">Экскурсия специально для увлеченных историей Великой Отечесвтенной Войны. Вы
+                    увидите те места которые либо совсем не изменились со времен Войны, либо остались узнаваемы до сих
+                    пор
+                </p>
+                <p class="excursion__info">Такой
+                    тур в Волгограде оказываем только мы!
+                </p>
+                <a class="article__link" href="contacts.html">Заказать экскурсию</a>
+            </div>
+
+            <div class="article excursion">
+                <h4>Индивидуальная экскурсия</h4>
+                <div class="excursion__gallery">
+                    <a href="img/kachalino.jpg" data-lightbox="individual-excurions"
+                        data-title="Церковь Троицы Живоначальной в Качалинской">
+                        <img class="article__img" src="img/kachalino-smal.jpg"
+                            alt="Церковь Троицы Живоначальной в Качалинской">
+                    </a>
+                    <a href="img/mushroom.jpg" data-lightbox="individual-excurions" data-title="гриб Дубовик Волгоград">
+                        <img class="article__img" src="img/mushroom-smal.jpg" alt="гриб Дубовик Волгоград">
+                    </a>
+                    <a href="img/volga.jpg" data-lightbox="individual-excurions" data-title="Правый берег Волги">
+                        <img class="article__img" src="img/volga-smal.jpg" alt="Правый берег Волги">
+                    </a>
+                </div>
+                <p class="excursion__info">
+                    - Продолжительность: в зависимости от маршрута
+                    <br>
+                    - Стоимость: по договоренности
+                </p>
+                <hr class="excursion__line">
+                <p class="excursion__title">Мы можем организовать для Вас экскурсионный тур по городу и области в
+                    зависмости от Ваших предпочтений. <br> Из нестандартных мероприятий мы можем предложить Вам:</p>
+
+                <p class="excursion__info">- Провести время на природе:
+                </p>
+
+                <ul class="excursion__list">
+                    <li>Посещение Волго-Ахтубинской поймы</li>
+                    <li>Рыбалка на Волге, Дону, Ахтубе или в пойме</li>
+                    <li>Сбор грибов, так называемая "Тихая охота"</li>
+                    <li>Отдых на пляжах Волги напротив города</li>
+                </ul>
+                <p class="excursion__info">- Увидеть воочую изрытую окопами, воронками, капонирами и блиндажами
+                    Сталинградскую степь
+                </p>
+
+
+                <a class="article__link" href="contacts.html">Заказать экскурсию</a>
+            </div>
 
         </div>
 
@@ -228,9 +391,9 @@
 
         </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script src="js/contact.js"></script>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>
