@@ -356,6 +356,11 @@
   }
 }
 
+.title__heading--center {
+  text-align: center;
+  margin-top: 20px;
+}
+
 .title__content {
   margin: 0;
   font-weight: 400;
@@ -617,6 +622,24 @@
 
 .article__img {
   border-radius: 15px;
+}
+
+.article-text {
+  padding: 0 50px;
+}
+
+@media (max-width: 500px) {
+  .article-text {
+    padding: 0 20px;
+  }
+}
+
+.article-text__info {
+  text-transform: none;
+}
+
+.article-text__link {
+  text-decoration: underline !important;
 }
 
 .social-bar {
