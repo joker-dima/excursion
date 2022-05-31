@@ -9,33 +9,3 @@
 
 //Footer
 @import "footer.scss";
-
-.excursion {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.excursion__gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.excursion__info {
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.excursion__list,
-.excursion__title {
-    margin: 0;
-}
-
-.excursion__line {
-    width: 100%;
-    padding: 0;
-    height: 0;
-    border: none;
-    border-top: 1px solid #333;
-}

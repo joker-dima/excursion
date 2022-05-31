@@ -276,6 +276,16 @@
     border-radius: 15px;
 }
 
+.article__img--centr {
+    display: block;
+    margin: 0 auto;
+}
+
+.article__img--title {
+    text-align: center;
+    margin-top: 5px;
+}
+
 .article-text {
     padding: 0 50px;
 
@@ -290,4 +300,34 @@
 
 .article-text__link {
     text-decoration: underline !important;
+}
+
+.excursion {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.excursion__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.excursion__info {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.excursion__list,
+.excursion__title {
+    margin: 0;
+}
+
+.excursion__line {
+    width: 100%;
+    padding: 0;
+    height: 0;
+    border: none;
+    border-top: 1px solid #333;
 }
