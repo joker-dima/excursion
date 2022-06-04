@@ -288,6 +288,7 @@
 
 .article-text {
     padding: 0 50px;
+    flex: 1 1 auto;
 
     @media (max-width:500px) {
         padding: 0 20px;

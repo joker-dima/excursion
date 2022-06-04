@@ -14,11 +14,23 @@
   font-style: normal;
 }
 
+html {
+  height: 100%;
+}
+
 .page-body {
   background-color: #E7E5E5;
+  height: 100%;
+}
+
+.main-wrapper {
+  flex: 1 1 auto;
 }
 
 .page-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: white;
   margin: 0 auto;
   max-width: 1200px;
@@ -636,6 +648,7 @@
 
 .article-text {
   padding: 0 50px;
+  flex: 1 1 auto;
 }
 
 @media (max-width: 500px) {
