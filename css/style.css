@@ -781,4 +781,19 @@ hr {
   text-transform: none;
   font-size: 12px;
 }
+
+a {
+  text-decoration-skip-ink: none;
+  text-decoration: underline;
+}
+
+.notification__position-centr {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+
+.notification__position-centr a:hover {
+  color: #4487b2;
+}
 /*# sourceMappingURL=style.css.map */
