@@ -776,4 +776,9 @@ hr {
 .fil-gray-light {
   fill: #e2e2e2;
 }
+
+.notification {
+  text-transform: none;
+  font-size: 12px;
+}
 /*# sourceMappingURL=style.css.map */
