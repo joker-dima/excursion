@@ -20,6 +20,7 @@ Disallow: /cookie.html
 Disallow: /recaptcha.php
 Disallow: /mail.php
 Disallow: /yandex_aaac0e5dace4c3c6.html
+Sitemap: https://volgograd-tour.ru/sitemap.xml
 
 User-agent: Aport
 Disallow: /
