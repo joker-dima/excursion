@@ -1,14 +1,14 @@
 // Global
-@import "global.scss";
+@import "_global";
 
 // Header
-@import "header.scss";
+@import "_header";
 
 // Main-content
-@import "main.scss";
+@import "_main";
 
 //Footer
-@import "footer.scss";
+@import "_footer";
 
 .notification {
     text-transform: none;
@@ -28,6 +28,4 @@ a {
     a:hover {
         color: #4487b2;
     }
-
-
 }
