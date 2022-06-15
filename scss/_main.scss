@@ -256,6 +256,25 @@
     }
 }
 
+.article-aside {
+    background-color: rgba(116, 180, 215, 0.05);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 1px 1px rgba(24, 107, 159, 0.3);
+    display: flex;
+    padding: 0;
+
+    p {
+        margin: 10px 5px 10px 0;
+    }
+
+    img {
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+}
+
+
 .article__link {
     font-weight: 700;
     text-decoration: underline !important;

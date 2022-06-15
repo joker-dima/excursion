@@ -45,5 +45,5 @@ function watchFiles() {
     gulp.watch("./**/*.js", browserReload);
 }
 
-gulp.task('default', gulp.parallel(sync, watchFiles));
+gulp.task('default', gulp.parallel(sync, watchFiles, css_style));
 gulp.task(sync);
