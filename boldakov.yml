@@ -1,0 +1,87 @@
+<yml_catalog date="2022-07-19 12:10">
+<shop>
+<name>Центр психологии ПсиДок</name>
+<company>Центр психологии ПсиДок</company>
+<url>https://doctordolgih.ru/</url>
+<email>doctor@sdolgih.ru</email>
+<picture>https://static.tildacdn.com/tild3866-3664-4661-b731-356563656630/photo.svg</picture>
+<description>Каталог врачей</description>
+<currencies>
+<currency id="RUR" rate="1"/>
+</currencies>
+<categories>
+<category id="1">Врач</category>
+</categories>
+<sets>
+<set id="psiholog">
+<name>Психолог</name>
+<url>https://doctors.sample.s3.yandex.net/terapevt</url>
+</set>
+</sets>
+<offers>
+<offer id="vrach1" group_id="1">
+<name>Болдаков Александр Владимирович</name>
+<url>https://doctordolgih.ru/boldakov-a-v</url>
+<price from="true">1500</price>
+<oldprice>2000</oldprice>
+<currencyId>RUR</currencyId>
+<sales_notes>Первичный прием</sales_notes>
+<set-ids>psiholog</set-ids>
+<picture>https://thumb.tildacdn.com/tild3564-6561-4337-b738-303465376362/-/resize/640x/-/format/webp/1.jpg</picture>
+<description>Работает без лекарств с паническими атаками, страхами и тревогами. Помогает справиться с горем и чувством вины. Специализируется на расстройствах пищевого поведения, заедании стресса, переедании.</description>
+<categoryId>1</categoryId>
+<!-- Пустых блоков param быть не должно. Если необязательное поле не заполнено, его нужно исключить из фида -->
+<param name="Болдаков">Орлов</param>
+<param name="Имя">Александр</param>
+<param name="Отчество">Владимирович</param>
+<param name="Годы опыта">5</param>
+<param name="Начало карьеры">2017-03-01</param>
+<param name="Город">г. Волгоград</param>
+<param name="Взрослый врач">true</param>
+<param name="Детский врач">false</param>
+<param name="Средняя оценка">5</param>
+<param name="Число отзывов">3</param>
+<param name="Профессиональный рейтинг">5.0</param>
+<param name="Ссылка на профиль врача">https://doctordolgih.ru/boldakov-a-v</param>
+<param name="Город клиники">г. Волгоград</param>
+<param name="Адрес клиники">ул. Днестровская, 14</param>
+<param name="Название клиники">Центр психологии имени Долгих</param>
+<param name="Возможность записи">false</param>
+<param name="Онлайн-расписание">false</param>
+<param name="Телефон для записи">+7 927 537 18 81</param>
+<!-- Можно подменник аггрегатора -->
+<param name="Образование - 1" unit="Организация">Волгоградский Государственный Университет</param>
+<param name="Образование - 1" unit="Дата">2009</param>
+<param name="Образование - 1" unit="Название">Базовое образование</param>
+
+<param name="Образование - 2" unit="Организация">Академия Дистанционного Образования г. Омск</param>
+<param name="Образование - 2" unit="Дата">2022</param>
+<param name="Образование - 2" unit="Название">Профессиональная переподготовка</param>
+<param name="Образование - 2" unit="Специальность">направаление "Психология"</param>
+
+<param name="Образование - 2" unit="Организация">Институт психологии и психотерапии им. Милтона Эриксона г. Москва.</param>
+<param name="Образование - 3" unit="Дата">2017</param>
+<param name="Образование - 3" unit="Название">Повышение квалификации</param>
+<param name="Образование - 3" unit="Специальность">Работа с психической травмой, постравматическими расстройствами, кризисами</param>
+
+<param name="Место работы - 1" unit="Организация">Центр психологии имени Долгих</param>
+<param name="Место работы - 1" unit="Дата">2017-2022</param>
+
+
+<param name="Отзыв - 1" unit="Автор">Екатерина Гнусарева</param>
+<param name="Отзыв - 1" unit="Дата">20.07.2022 10:21:00</param>
+<param name="Отзыв - 1" unit="Отзыв проверен">true</param>
+
+
+<param name="Отзыв - 1" unit="Отзыв участвует в рейтинге">true</param>
+<param name="Отзыв - 1" unit="Оценка">5</param>
+
+<!-- Оценка пользователем, от 1 до 5 -->
+
+<param name="Отзыв - 1" unit="Понравилось">Приятный и вежливый молодой человек , помогает разобраться и понять , что действительно важно .
+Все понравилось)</param>
+
+</offer>
+</offers>
+</shop>
+</yml_catalog>

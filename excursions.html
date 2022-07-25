@@ -41,7 +41,6 @@
         <h1 class="visually-hidden">Интересные туры по городу-герою Волгоград</h1>
         <header class="main-header">
             <nav class="main-navigation--closed main-navigation">
-                <h2 class="visually-hidden">Site navigation</h2>
                 <div class="main-navigation__togle--close"></div>
                 <ul class="main-navigation__list">
                     <li class="main-navigation__item">
@@ -95,14 +94,38 @@
         <!-- MAIN-CONTENT -->
         <main class="main-wrapper">
             <div class="title title__position">
-                <h3 class="title__heading">Экскурсии по Волгограду</h3>
-                <p class="title__content">Конечная стоимость экскурсий зависит от места Вашего проживания, количества
-                    людей
-                    в экскурсионной группе и от Ваших пожеланий</p>
+                <h2 class="title__heading">Экскурсии по Волгограду</h2>
+                <p class="title__content">Минимальная стоимость экскурсии, указанная ниже, рассчитана за экскурсионную
+                    группу до четырех человек. В этом'случае Вы будете передвигаться по городу на личном авто
+                    экскурсовода. При большем количестве гостей мы закажем микроавтобус или полноценный экскурсионный
+                    автобус. В таком случае стоимость будет выше. Весь наш транспорт безопасен, за рулем опытные
+                    профессионалы, в салоне работает кондиционер, у экскурсовода есть микрофон и монитор для
+                    демонстрации видео-материалов.</p>
+                <br>
+                <p style="text-align: center; text-transform: uppercase;" class="title__content"> <strong>Есть пожелания
+                        по
+                        планированию
+                        маршрута? Отлично!</strong></p>
+                <ul class="excursion__list">
+                    <li>
+                        Вам интересна только история Сталинградской битвы? Окей, мы исключим из маршрута все что не
+                        касается
+                        этой
+                        тематики!
+                    </li>
+                    <li>
+                        Вы хотите 3 часа посвятить главным достопримечательностям города, а потом поехать на пляж на
+                        противоположный берег Волги с видом на ночной Волгоград? Нет проблем, мы все организуем!
+                    </li>
+                    <li>
+                        Вы не знаете чем заняться в Волгограде? Закажите стандартную обзорную экскурсию или позвоните
+                        нам и мы составим план в зависимости от Ваших предпочтений!
+                    </li>
+                </ul>
             </div>
             <div class="articles-wrapper">
                 <div class="article excursion">
-                    <h4>Обзорная экскурсия по Волгограду</h4>
+                    <h3>Обзорная экскурсия по Волгограду</h3>
                     <div class="excursion__gallery">
                         <a href="img/sobor.jpg" data-lightbox="overview-excursion"
                             data-title="Собор Александра Невского">
@@ -115,14 +138,21 @@
                         <a href="img/gerg-mill.jpg" data-lightbox="overview-excursion" data-title="Мельница Гергарда">
                             <img class="article__img" src="img/gerg-mill-smal.jpg" alt="Мельница Гергарда">
                         </a>
+                        <a href="img/homeland-mother.jpg" data-lightbox="overview-excursion"
+                            data-title="Родина-мать зовет!">
+                            <img class="article__img" src="img/homeland-mother-smal.jpg" alt="Родина-мать зовет!">
+                        </a>
                     </div>
-                    <p class="excursion__info">
-                        - Продолжительность: 3-4 часа
-                        <br>
-                        - Стоимость: от 3000 руб. за группу
-                    </p>
+                    <div class="excursion__info--wrapper">
+                        <img height="30px" src="img/vskl.svg" alt="Восклицательный знак">
+                        <p class="excursion__info">
+                            Продолжительность: <span>3-4 часа</span>
+                            <br>
+                            Стоимость: <span>от 3000 руб. за группу</span>
+                        </p>
+                    </div>
                     <hr class="excursion__line">
-                    <p class="excursion__title">Вы посетите 3 самые узнаваемые достопримечательности Волгограда - </p>
+                    <p class="excursion__title">Вы посетите 3 самые узнаваемые достопримечательности Волгограда:</p>
 
                     <p class="excursion__info">- Площадь Павших Борцов:
                     </p>
@@ -142,17 +172,21 @@
                     <ul class="excursion__list">
                         <li>Дом Павлова</li>
                         <li>Мельница Гергардта</li>
-                        <li>Музей-панорама (посещение самостоятельное, билеты в музей оплчиваются отдельно)</li>
+                        <li>Музей-панорама (посещение самостоятельное, билеты в музей оплачиваются отдельно)</li>
                     </ul>
-                    <p></p>
-                    <a class="article__link" href="obzornaya.html">Подробнее об экскурсии</a>
-                    <br>
-                    <a class="article__link" href="contacts.html">Заказать экскурсию</a>
+                    <div class="article__button--wrapper">
+                        <a style="--clr:#124464" class="article__button" href="obzornaya.html"><span>Подробнее об
+                                экскурсии</span><i></i></a>
+                    </div>
+                    <div class="article__button--wrapper">
+                        <a style="--clr:#124464" class="article__button" href="contacts.html"><span>Заказать
+                                экскурсию</span><i></i></a>
+                    </div>
                 </div>
 
 
                 <div class="article excursion">
-                    <h4>Расширенная обзорная экскурсия по Волгограду</h4>
+                    <h3>Расширенная обзорная экскурсия по Волгограду</h3>
                     <div class="excursion__gallery">
                         <a href="img/ludnikov.jpg" data-lightbox="overview-excursion-large"
                             data-title="Остров Людникова">
@@ -167,11 +201,14 @@
                             <img class="article__img" src="img/rossoshka-field-smal.jpg" alt="Россошинский мемориал">
                         </a>
                     </div>
-                    <p class="excursion__info">
-                        - Продолжительность: 4-5 часа
-                        <br>
-                        - Стоимость: от 5000 руб. за группу
-                    </p>
+                    <div class="excursion__info--wrapper">
+                        <img height="30px" src="img/vskl.svg" alt="Восклицательный знак">
+                        <p class="excursion__info">
+                            Продолжительность: <span>4-5 часов</span>
+                            <br>
+                            Стоимость: <span>от 5000 руб. за группу</span>
+                        </p>
+                    </div>
                     <hr class="excursion__line">
                     <p class="excursion__title">В тур включена такая же программа как в стандартной обзорной экскурсии,
                         плюс
@@ -183,12 +220,14 @@
                     </p>
                     <p class="excursion__info">- РОССОШИНСКИЙ ВОЕННО-МЕМОРИАЛЬНЫЙ КОМПЛЕКС
                     </p>
-                    <br>
-                    <a class="article__link" href="contacts.html">Заказать экскурсию</a>
+                    <div class="article__button--wrapper">
+                        <a style="--clr:#124464" class="article__button" href="contacts.html"><span>Заказать
+                                экскурсию</span><i></i></a>
+                    </div>
                 </div>
 
                 <div class="article excursion">
-                    <h4>Пешая экскурсия по Мамаеву Кургану</h4>
+                    <h3>Пешая экскурсия по Мамаеву Кургану</h3>
                     <div class="excursion__gallery">
                         <a href="img/stand-death.jpg" data-lightbox="Mamaev" data-title="Площадь Стоявших насмерть">
                             <img class="article__img" src="img/stand-death-smal.jpg" alt="Площадь Стоявших насмерть">
@@ -205,37 +244,38 @@
                             <img class="article__img" src="img/homeland-mother-smal.jpg" alt="Родина-мать зовет!">
                         </a>
                     </div>
-                    <p class="excursion__info">
-                        - Продолжительность: 1-1.5 часа
-                        <br>
-                        - Стоимость: от 2000 руб. за группу
-                    </p>
+                    <div class="excursion__info--wrapper">
+                        <img height="30px" src="img/vskl.svg" alt="Восклицательный знак">
+                        <p class="excursion__info">
+                            Продолжительность: <span>1-1,5 часа</span>
+                            <br>
+                            Стоимость: <span>от 2000 руб. за группу</span>
+                        </p>
+                    </div>
                     <hr class="excursion__line">
                     <p class="excursion__title">Вы поднимитесь на главную высоту России, ознакомитесь с подробностями
                         боев
                         за эту высоту, услышите неверотяные военные истории, а также интересные факты об основных
                         композициях Историко-мемориального комплекса:</p>
-
-                    <p class="excursion__info">- горельеф «Память поколений»
-                    </p>
-                    <p class="excursion__info">- Площадь Стоявших насмерть
-                    </p>
-                    <p class="excursion__info">- Стены-руины
-                    </p>
-                    <p class="excursion__info">- Площадь Героев и Подпорная стена
-                    </p>
-                    <p class="excursion__info">- Зал Воинской Славы и Вечный огонь
-                    </p>
-                    <p class="excursion__info">- Площадь Скорби
-                    </p>
-                    <p class="excursion__info">- Монумент «Родина-мать зовет!»
-                    </p>
                     <br>
-                    <a class="article__link" href="contacts.html">Заказать экскурсию</a>
+                    <ul class="excursion__list">
+                        <li>Горельеф «Память поколений»</li>
+                        <li>Площадь Стоявших насмерть</li>
+                        <li>Стены-руины</li>
+                        <li>Площадь Героев и Подпорная стена</li>
+                        <li>Зал Воинской Славы и Вечный огонь</li>
+                        <li>Площадь Скорби</li>
+                        <li>Монумент «Родина-мать зовет!»</li>
+                    </ul>
+
+                    <div class="article__button--wrapper">
+                        <a style="--clr:#124464" class="article__button" href="contacts.html"><span>Заказать
+                                экскурсию</span><i></i></a>
+                    </div>
                 </div>
 
                 <div class="article excursion">
-                    <h4>Экскурсия "Тогда / Сейчас"</h4>
+                    <h3>Экскурсия "Тогда / Сейчас"</h3>
                     <div class="excursion__gallery">
                         <a href="img/univermag.jpg" data-lightbox="then-now" data-title="Сталинградский ЦУМ">
                             <img class="article__img" src="img/univermag-smal.jpg" alt="Сталинградский ЦУМ">
@@ -276,31 +316,38 @@
                                 alt="Немецкие солдаты в окопе Сталинград">
                         </a>
                     </div>
-                    <p class="excursion__info">
-                        - Продолжительность: 3-5 часов
-                        <br>
-                        - Стоимость: от 4000 руб. за группу
-                    </p>
+                    <div class="excursion__info--wrapper">
+                        <img height="30px" src="img/vskl.svg" alt="Восклицательный знак">
+                        <p class="excursion__info">
+                            Продолжительность: <span>3-5 часов</span>
+                            <br>
+                            Стоимость: <span>от 4000 руб. за группу</span>
+                        </p>
+                    </div>
                     <hr class="excursion__line">
                     <p class="excursion__title">Экскурсия специально для увлеченных историей Великой Отечесвтенной
                         Войны. Вы
                         увидите те места которые либо совсем не изменились со времен Войны, либо остались узнаваемы до
                         сих
                         пор.
-                        <br>
-                        <br> Чтобы Вы представляли примерный маршрут экскурсии, прочитайте эту статью - <a
-                            href="stalingrad-volgograd.html" class="article__link">"ВИРТУАЛЬНАЯ ЭКСКУРСИЯ
-                            СТАЛИНГРАД-ВОЛГОГРАД"</a>
-                    </p>
 
+                    </p>
+                    <br>
                     <p class="excursion__info">Такой
                         тур в Волгограде оказываем только мы!
                     </p>
-                    <a class="article__link" href="contacts.html">Заказать экскурсию</a>
+                    <div class="article__button--wrapper">
+                        <a style="--clr:#124464" class="article__button"
+                            href="stalingrad-volgograd.html"><span>Подробнее об экскурсии</span><i></i></a>
+                    </div>
+                    <div class="article__button--wrapper">
+                        <a style="--clr:#124464" class="article__button" href="contacts.html"><span>Заказать
+                                экскурсию</span><i></i></a>
+                    </div>
                 </div>
 
                 <div class="article excursion">
-                    <h4>Индивидуальная экскурсия</h4>
+                    <h3>Индивидуальная экскурсия</h3>
                     <div class="excursion__gallery">
                         <a href="img/kachalino.jpg" data-lightbox="individual-excurions"
                             data-title="Церковь Троицы Живоначальной в Качалинской">
@@ -315,11 +362,14 @@
                             <img class="article__img" src="img/volga-smal.jpg" alt="Правый берег Волги">
                         </a>
                     </div>
-                    <p class="excursion__info">
-                        - Продолжительность: в зависимости от маршрута
-                        <br>
-                        - Стоимость: по договоренности
-                    </p>
+                    <div class="excursion__info--wrapper">
+                        <img height="30px" src="img/vskl.svg" alt="Восклицательный знак">
+                        <p class="excursion__info">
+                            Продолжительность: <span>в зависимости от маршрута</span>
+                            <br>
+                            Стоимость: <span>по договоренности</span>
+                        </p>
+                    </div>
                     <hr class="excursion__line">
                     <p class="excursion__title">Мы можем организовать для Вас экскурсионный тур по городу и области в
                         зависмости от Ваших предпочтений. <br> Из нестандартных мероприятий мы можем предложить Вам:</p>
@@ -338,7 +388,10 @@
                     </p>
 
 
-                    <a class="article__link" href="contacts.html">Заказать экскурсию</a>
+                    <div class="article__button--wrapper">
+                        <a style="--clr:#124464" class="article__button" href="contacts.html"><span>Заказать
+                                экскурсию</span><i></i></a>
+                    </div>
                 </div>
 
             </div>
