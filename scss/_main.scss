@@ -4,9 +4,6 @@
 }
 
 .title__position {
-
-    // margin-top: 55px;
-    // margin-bottom: 45px;
     text-align: center;
 
     @media (max-width:767px) {
@@ -234,7 +231,6 @@
         grid-column-end: 3;
         padding-top: 0;
         text-align: left;
-
     }
 }
 
@@ -352,7 +348,6 @@
     flex-wrap: wrap;
     gap: 10px;
 
-    // justify-content: center;
     @media (max-width:767px) {
         justify-content: center;
     }
@@ -406,6 +401,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    cursor: pointer;
 }
 
 

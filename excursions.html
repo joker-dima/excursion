@@ -9,7 +9,9 @@
     <meta name="description"
         content="Какие экскурсии есть в Волгограде? Заказать индивидуальный тур. Волгоград - сквозь время - Сталинград">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/popup.css" rel="stylesheet">
     <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/font-style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -36,6 +38,64 @@
         <div><img src="https://mc.yandex.ru/watch/89023233" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
+    <div id="elem" class="popup">
+        <div class="close"></div>
+        <div class="social-bar">
+            <a href="tel:+79177215258" id="phone">
+                <svg class="social__icon">
+                    <use xlink:href="#call"></use>
+                </svg>
+            </a>
+            <br>
+            <a href="tel:+79177215258" class="title__content">+7-917-721-52-58</a>
+            <br>
+            <br class="mobile-hidden">
+            <div class="social-bar__icons">
+                <a title="Whatsapp" href="whatsapp://send?phone=79177215258" target="_blank">
+                    <svg class="social__icon">
+                        <use xlink:href="#whatsapp"></use>
+                    </svg>
+                </a>
+
+                <a title="Telegram" href="https://t.me/volgograd_tour34" target="_blank">
+                    <svg class="social__icon">
+                        <use xlink:href="#telegram"></use>
+                    </svg>
+
+                </a>
+
+                <a title="VK" href="https://vk.com/volgograd_tour34" target="_blank">
+                    <svg class="social__icon">
+                        <use xlink:href="#vk"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="title">
+                <p style="max-width: 490px; margin: 0 auto;" class="title__content--social"><strong>Форма обратной
+                        связи:</strong>
+                </p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form id="contact" action="mail.php" method="post">
+                <div id="note"></div>
+                <div id="fields">
+                    <p><input maxlength="30" type="text" name="email" id="email" placeholder="Ваш e-mail или телефон"
+                            required>
+                    <p><textarea maxlength="300" name="message" cols="1" rows="2" id="comment"
+                            placeholder="Коментарий"></textarea></p>
+                    <div data-size="compact" class="g-recaptcha"
+                        data-sitekey="6LeFAB4gAAAAAMxoydugqHVFWVI1kO6IyPUqfGpL"></div>
+                    <p class="notification">Нажимая на кнопку «Отправить сообщение», Вы даете согласие на <a
+                            target="_blank" style="text-decoration: underline" href="personal-data.html">
+                            обработку
+                            персональных данных</a> </p>
+                    <p><button type="submit" id="submit" class="go">Отправить сообщение</button></p>
+                </div>
+            </form>
+        </div>
+    </div>
     <div class="page-container">
         <!-- HEADER -->
         <h1 class="visually-hidden">Интересные туры по городу-герою Волгоград</h1>
@@ -179,7 +239,7 @@
                                 экскурсии</span><i></i></a>
                     </div>
                     <div class="article__button--wrapper">
-                        <a style="--clr:#124464" class="article__button" href="contacts.html"><span>Заказать
+                        <a style="--clr:#124464" id="order-excursion" class="article__button"><span>Заказать
                                 экскурсию</span><i></i></a>
                     </div>
                 </div>
@@ -221,7 +281,7 @@
                     <p class="excursion__info">- РОССОШИНСКИЙ ВОЕННО-МЕМОРИАЛЬНЫЙ КОМПЛЕКС
                     </p>
                     <div class="article__button--wrapper">
-                        <a style="--clr:#124464" class="article__button" href="contacts.html"><span>Заказать
+                        <a style="--clr:#124464" id="order-excursion" class="article__button"><span>Заказать
                                 экскурсию</span><i></i></a>
                     </div>
                 </div>
@@ -269,7 +329,7 @@
                     </ul>
 
                     <div class="article__button--wrapper">
-                        <a style="--clr:#124464" class="article__button" href="contacts.html"><span>Заказать
+                        <a style="--clr:#124464" id="order-excursion" class="article__button"><span>Заказать
                                 экскурсию</span><i></i></a>
                     </div>
                 </div>
@@ -341,7 +401,7 @@
                             href="stalingrad-volgograd.html"><span>Подробнее об экскурсии</span><i></i></a>
                     </div>
                     <div class="article__button--wrapper">
-                        <a style="--clr:#124464" class="article__button" href="contacts.html"><span>Заказать
+                        <a style="--clr:#124464" id="order-excursion" class="article__button"><span>Заказать
                                 экскурсию</span><i></i></a>
                     </div>
                 </div>
@@ -389,12 +449,12 @@
 
 
                     <div class="article__button--wrapper">
-                        <a style="--clr:#124464" class="article__button" href="contacts.html"><span>Заказать
+                        <a style="--clr:#124464" id="order-excursion" class="article__button"><span>Заказать
                                 экскурсию</span><i></i></a>
                     </div>
                 </div>
-
             </div>
+
         </main>
 
         <!-- FOOTER -->
@@ -489,8 +549,11 @@
     </div>
 
     <script src="js/jquery-1.11.0.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="js/lightbox.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/popup.js"></script>
 
 </body>
 

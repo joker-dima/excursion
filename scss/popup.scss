@@ -1,0 +1,88 @@
+.popup {
+    display: none;
+    max-width: 500px;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 30);
+    border-radius: 30px;
+
+    .mobile-hidden {
+        @media (max-width:400px) {
+            display: none;
+        }
+    }
+
+    form#contact {
+        @media (max-width:768px) {
+            padding: 10px;
+        }
+    }
+
+    .social-bar__icons a svg,
+    .social-bar a svg {
+        @media (max-width:768px) {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    @media (max-width:1100px) {
+        width: 80%;
+    }
+
+    .close {
+        position: absolute;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        padding-top: 26px;
+        padding-left: 10px;
+        padding-right: 10px;
+        right: 5px;
+        top: 5px;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 35px;
+            height: 4px;
+            background-color: #74b4d7;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+
+        &:hover::after,
+        &:hover::before {
+            background-color: #4487b2;
+        }
+    }
+
+
+    .social-bar .title {
+        padding: 20px;
+
+        @media (max-width:768px) {
+            padding: 10px;
+        }
+    }
+}
+
+.active {
+    display: block;
+}
+
+.blur {
+    filter: blur(5px);
+}

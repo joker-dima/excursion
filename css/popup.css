@@ -1,0 +1,90 @@
+.popup {
+  display: none;
+  max-width: 500px;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  box-shadow: 0 5px 30px black;
+  border-radius: 30px;
+}
+
+@media (max-width: 400px) {
+  .popup .mobile-hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .popup form#contact {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .popup .social-bar__icons a svg,
+  .popup .social-bar a svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .popup {
+    width: 80%;
+  }
+}
+
+.popup .close {
+  position: absolute;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  padding-top: 26px;
+  padding-left: 10px;
+  padding-right: 10px;
+  right: 5px;
+  top: 5px;
+}
+
+.popup .close::before, .popup .close::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 4px;
+  background-color: #74b4d7;
+}
+
+.popup .close::before {
+  transform: rotate(45deg);
+}
+
+.popup .close::after {
+  transform: rotate(-45deg);
+}
+
+.popup .close:hover::after, .popup .close:hover::before {
+  background-color: #4487b2;
+}
+
+.popup .social-bar .title {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .popup .social-bar .title {
+    padding: 10px;
+  }
+}
+
+.active {
+  display: block;
+}
+
+.blur {
+  filter: blur(5px);
+}
+/*# sourceMappingURL=popup.css.map */
